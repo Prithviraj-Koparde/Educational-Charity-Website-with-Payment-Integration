@@ -4,9 +4,33 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #FFFFDD;
-    height: min-content;
+    background-color: #202020;
 }
+
+/*KEYFRAMES*/
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+/*@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(30px) scale(1);
+    }
+} */
 
 #logo{
     height: 60px;
@@ -49,7 +73,7 @@ li , a, button{
     font-family: "Montserrat",sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #016A70;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -57,31 +81,75 @@ header{
     display:flex ;
     justify-content: space-between;
     align-items: center;
-    padding: 30px ;
+    padding: 30px;
 }
 
-.main{
+#ul1{
     display: flex;
-}
-#img1{
-    height: 500px;
-    width: 25rem;
-    padding-left: 10px;
-    border-radius: 10%;
 }
 
 #text{
-    font-family: "Montserrat",sans-serif;
+    color: #173B45;
     font-size: x-large;
-    padding-top: 150px;
-    padding-left: 80px;
-    text-align:justify;
-}
-#img3{
-    height: 500px;
-    width: 25rem;
-    padding-right: 10px;
-    margin-left: 70px;
-    border-radius: 10%; 
+    padding-top: 10%;
+    text-align: justify;
+    padding-inline: 10px;
+    background-color: #B5C0D0;
+    border-radius: 20%;
+    animation: fade-up 3s;
 }
 
+#text1{
+    color: #173B45;
+    font-size: x-large;
+    padding-top: 15%;
+    text-align: justify;
+    padding-inline: 10px;
+    background-color: #CCD3CA;
+    border-radius: 20%;
+
+}
+
+#text2{
+    color: #173B45;
+    font-size: x-large;
+    padding-top: 10%;
+    text-align: justify;
+    padding-inline: 10px;
+    background-color: #B5C0D0;   
+    border-radius: 20%;
+    
+}
+
+
+#img1{
+    height: 500px;
+    border-radius: 30px;
+    background-clip: padding-box;
+    animation: fade-up 2s;
+}
+
+#img2{
+    height: 730px;
+    border-radius: 30px;
+    background-clip: padding-box;
+    /* to rotate the image from top  */
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(-90deg)
+}
+
+#img3{
+    height: 543px;
+    border-radius: 30px;
+    background-clip: padding-box;
+    /* to rotate the image from top */
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(-90deg)
+}
+
+.button1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
